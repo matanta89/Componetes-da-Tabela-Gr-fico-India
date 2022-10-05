@@ -1,0 +1,22 @@
+
+<h1>Tabela Clima da Índia</h1>
+
+<table class="styled-table">
+  <thead>
+    <th>Data</th>
+    <th>Meantemp</th>
+    <th>Humidade</th>
+    <th>Velocidade do Vento</th>
+    <th>Meanpressure</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let clima of tabela | async">
+      <td>{{clima.date}}</td>
+      <td>{{clima.meantemp}}</td>
+      <td>{{clima.humidity}}</td>
+      <td>{{clima.wind_speed}}</td>
+      <td>{{clima.meanpressure}}</td>
+    </tr>
+  </tbody>
+</table>
+
